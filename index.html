@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="uk">
     <meta charset="UTF-8">
     <title>My Page</title>
@@ -7,45 +8,48 @@
 
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
+
 <body>
     <div class="main">
 
         <div class="left">
-            <div class="add-product">
+            <form class="add-product">
                 <input type="text" placeholder="Назва товару" class="input-product">
                 <button class="add-button" data-tooltip="Add product">
                     Додати
                 </button>
-            </div>
+            </form>
 
-            <span class="product-item">
-          Apple
+            <div id="product-list">
+                <span class="product-item">
+                    <span class="product-name">Apple</span>
                 <button class="minus-button" data-tooltip="Minus button">-</button>
-          <span class="amount">4</span>
+                <span class="amount">4</span>
                 <button class="plus-button" data-tooltip="Plus button">+</button>
                 <button class="buy-button" data-tooltip="Buy button">Куплено</button>
                 <button class="delete-button" data-tooltip="Delete button">×</button>
-         </span>
-            <span class="product-item">
-          Tomato
+                </span>
+                <span class="product-item">
+                    <span class="product-name">Tomato</span>
                 <button class="minus-button" data-tooltip="Minus button">-</button>
-          <span class="amount">4</span>
+                <span class="amount">4</span>
                 <button class="plus-button" data-tooltip="Plus button">+</button>
                 <button class="buy-button" data-tooltip="Buy button">Куплено</button>
                 <button class="delete-button" data-tooltip="Delete button">×</button>
-            </span>
-            <span class="product-item">
-          Cookie
+                </span>
+                <span class="product-item">
+                    <span class="product-name">Cookie</span>
                 <button class="minus-button" data-tooltip="Minus button">-</button>
-          <span class="amount">4</span>
+                <span class="amount">4</span>
                 <button class="plus-button" data-tooltip="Plus button">+</button>
                 <button class="buy-button" data-tooltip="Buy button">Куплено</button>
                 <button class="delete-button" data-tooltip="Delete button">×</button>
-         </span>
+                </span>
+            </div>
         </div>
 
         <div class="right">
-            <div class="right-top">
+            <div class="right-top" id="no-bought">
                 <h2>Залишилося</h2>
                 <span class="product-item-right">
                     Tomatoes
@@ -55,22 +59,24 @@
                     Cookie
                     <span class="amount-right">4</span>
                 </span>
-            </div>
-            
-            <div class="right-bottom">
-                <h2>Куплено</h2>
                 <span class="product-item-right">
-              Apple
-          <span class="amount-right">4</span>
+                    Apple
+                    <span class="amount-right">4</span>
                 </span>
+            </div>
+
+            <div class="right-bottom" id="bought">
+                <h2>Куплено</h2>
             </div>
         </div>
 
     </div>
 
-    <div class = " badge">
+    <div class=" badge">
         <span class="badge-buyList">Buy List</span>
         <span class=" badge-name">Topchyi Violetta</span>
     </div>
+    <script src="jsCode.js"></script>
 </body>
+
 </html>
